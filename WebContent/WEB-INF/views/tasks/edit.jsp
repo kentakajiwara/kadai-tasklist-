@@ -7,6 +7,13 @@
        <form method="POST" action="${pageContext.request.contextPath}/update">
                 <c:import url="_form.jsp" />
        </form>
+       <script>
+       funciton confirmDestrou(){
+           if(confim("本当に削除してよろしいですか？")){
+               document.forms[1].submit();
+           }
+       }
+       </script>
 
     </c:param>
  </c:import>
